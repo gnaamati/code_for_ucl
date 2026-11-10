@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Perl Subroutines Documentation</title><style>body{font:16px/1.6 system-ui,Arial,sans-serif;max-width:850px;margin:45px auto;padding:0 22px;color:#243044}h1{border-bottom:2px solid #dbe3ed;padding-bottom:10px}dt{font-weight:700;font-family:ui-monospace,Consolas,monospace;margin-top:23px;color:#155e9b}dd{margin:7px 0 0 22px;white-space:pre-line}footer{margin-top:45px;border-top:1px solid #ddd;padding-top:15px}</style></head><body><h1>SUBROUTINES</h1><dl>
+<dt>read_file ( $file )</dt><dd>Reads data from a file into a string (doesn&#x27;t chomp)</dd>
+<dt>slurp( $file )</dt><dd>Parses the file and returns the lines as an array.
+Each line is chomped to remove &quot;\n&quot;;</dd>
+<dt>slurp_no_chomp( $file )</dt><dd>Same as slurp but doesn&#x27;t chomp lines</dd>
+<dt>shift_first( $file )</dt><dd>Shifts the first line of a file
+The file remains the same without the first line</dd>
+<dt>file2hash ( $file )</dt><dd>Parses the lines of a file into a hash
+Each key gets a value of 1</dd>
+<dt>file2hash_tab ( $file)</dt><dd>Parses the data into a hash with the keys and values
+tab delimited. Skips lines starting with #</dd>
+<dt>hash2file_tab ($hash, $file)</dt><dd>Parses a hash into a file (tab delimited)</dd>
+<dt>sub get_files_from_dir ( $dir )</dt><dd>Gets files from a directory and returns them in list format</dd>
+<dt>line2hash ($header, $line)</dt><dd>Splits a line and parses it into the hash according to given headers</dd>
+<dt>slurp_excel ($file)</dt><dd>Parses an Excel file and returns the data as a list of tab delimited lines</dd>
+<dt>get_slice_adaptor ($reg_file, $species)</dt><dd>Create a slice adaptor according to the species and registry</dd>
+<dt>get_gene_adaptor ($reg_file, $species)</dt><dd>Create a slice adaptor according to the species and registry</dd>
+</dl><footer><h1>AUTHOR</h1><p>Guy Naamati</p></footer></body></html>
